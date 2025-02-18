@@ -1,0 +1,30 @@
+
+/* For UVA banner at top of home page*/
+.banner {
+    background: url('../photos/uva.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end; 
+    color: #086952;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Sign-in Button */
+.sign-in {
+    background-color: white; 
+    color: #086952; /* Im choosing such random colors and fonts ... feel free to change anything */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-end; /* Moves button to the bottom */
+    margin-bottom: 10px;
+}
+
+.sign-in:hover {
+    background-color: #7dc4a6;
+}
