@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-self: flex-end; 
-    color: #086952;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 40px;
     font-weight: bolder;
 }
 
@@ -21,10 +21,40 @@
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    align-self: flex-end; /* Moves button to the bottom */
+    align-self: flex-end; 
     margin-bottom: 10px;
 }
 
 .sign-in:hover {
     background-color: #7dc4a6;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px; 
+    padding: 5px;  
+    box-sizing: border-box; 
+}
+
+.card {
+    background: rgb(231, 249, 237);
+    padding: 10px;  
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    box-sizing: border-box;  
 }
