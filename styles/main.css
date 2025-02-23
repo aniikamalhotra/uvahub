@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-self: flex-end; 
-    color: #ffffff;
-    font-size: 40px;
+    color: #086952;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -21,7 +21,7 @@
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    align-self: flex-end; 
+    align-self: flex-end; /* Moves button to the bottom */
     margin-bottom: 10px;
 }
 
@@ -29,32 +29,38 @@
     background-color: #7dc4a6;
 }
 
+/* container for the cards so they look formatted on the web page */
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 5px; 
-    padding: 5px;  
-    box-sizing: border-box; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100px;
 }
 
 .card {
-    background: rgb(231, 249, 237);
-    padding: 10px;  
-    border-radius: 10px;
-    text-align: center;
+    width: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.card img{
+    width: 100px;
+    height: 200px;
 }
 
-body {
-    margin: 0;
-    height: 100vh; 
-    box-sizing: border-box;  
+.card-body {
+    padding: 1rem;
 }
