@@ -1,15 +1,46 @@
 
 /* For UVA banner at top of home page*/
 .banner {
-    background: url('../photos/uva.jpeg') no-repeat center center;
+    position: relative;
+    background: url('../photos/uva_banner.jpg') no-repeat center center;
     background-size: cover;
-    height: 250px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-self: flex-end; 
-    color: #086952;
-    font-size: 30px;
-    font-weight: bolder;
+    align-items: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+.banner h1 {
+    position: relative;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .banner {
+        height: 150px;
+        padding-left: 20px; 
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
 }
 
 /* Sign-in Button */
@@ -41,14 +72,24 @@
     border: 2px solid #ddd;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    height: 100%;
+    overflow:hidden;
 }
 
 .card img{
-    width: 100px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
-}
+    display: block;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
 
 .card-body {
     padding: 1rem;
+}
+
+.card-hover{
+    transform: translateY(-5px);
 }
