@@ -103,3 +103,9 @@
     background-color: #7dc4a6 !important;
     transform: translateY(-5px);
 }
+
+.comment-box {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
