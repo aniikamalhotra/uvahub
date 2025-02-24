@@ -93,3 +93,13 @@
 .card-hover{
     transform: translateY(-5px);
 }
+
+.card-button{ 
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #7dc4a6 !important;
+    transform: translateY(-5px);
+}
