@@ -61,7 +61,7 @@
 }
 
 /* container for the cards so they look formatted on the web page */
-.container {
+#hub .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
