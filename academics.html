@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.1/less.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
@@ -21,6 +22,109 @@
             </div>
         </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="container">
+        <h2 class="text-center mb-4"> Find Your Perfect Study Spot</h2>
+
+        <div class="mb-3">
+            <label for="study-filer" class="form-label"> Filter by Location Type: </label>
+            <select id="study-filter" class="form-select">
+                <option value="all">All</option>
+                <option value="library">Libraries</option>
+                <option value="cafe">Cafés</option>
+                <option value="lounge">Lounges</option>
+            </select>
+        </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div id="libraryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="photos/clem_library.png" class="card-img-top" alt="Library">
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="d-block w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086166!2d-78.50798018468392!3d38.0329149797175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b387a1930a4b4f%3A0x71ef8e42a96e0eb1!2sAlderman%20Library!5e0!3m2!1sen!2sus!4v1639144385675!5m2!1sen!2sus"
+                            width="100%" height="250px" style="border:0;" allowfullscreen loading="lazy">
+                        </iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Clemons Library</h5>
+                    <p class="card-text">Quiet study area with private study rooms available. Each floor has their own noise level with the 2nd floor being best for collaborative space and the 1st floor for quieter study sessions.  </p>
+                    <p class="text-muted">Open: 8 AM - 2 AM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="photos/sk_cafe.jpg" class="card-img-top" alt="cafe">
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="d-block w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086166!2d-78.50798018468392!3d38.0329149797175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b387a1930a4b4f%3A0x71ef8e42a96e0eb1!2sAlderman%20Library!5e0!3m2!1sen!2sus!4v1639144385675!5m2!1sen!2sus"
+                            width="100%" height="250px" style="border:0;" allowfullscreen loading="lazy">
+                        </iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">SK Coffee & Co</h5>
+                    <p class="card-text">Great atmosphere for group projects, with WiFi and delicious coffee!</p>
+                    <p class="text-muted">Open: 7 AM - 9 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Groups Section -->
+    <h3 class="mt-5">Join a Study Group</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">CS 4640 Study Group</h5>
+                    <p class="card-text">Weekly review sessions for web development concepts.</p>
+                    <button class="btn btn-primary">Join Group</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Math 3100 Study Sessions</h5>
+                    <p class="card-text">Meet at Alderman Library for calculus problem-solving.</p>
+                    <button class="btn btn-primary">Join Group</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
